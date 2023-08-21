@@ -161,3 +161,27 @@
     width: 100%;
   }
 }
+
+
+@media screen and (max-width: 992px){
+  .container{
+    width: 90%;
+    max-width: 992px;
+  }
+
+  #planning .row .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    width: 100%;
+  }
+
+  #benefits .row .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    width: 50%;
+  }
+}
