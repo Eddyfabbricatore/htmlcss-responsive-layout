@@ -71,16 +71,16 @@
   margin: 30px 0;
 }
 
+.m-40{
+  margin: 40px 0;
+}
+
 .m-50{
   margin: 50px 0;
 }
 
 .mt-30{
   margin-top: 30px;
-}
-
-.mt-40{
-  margin-top: 40px;
 }
 
 .mb-40{
@@ -106,8 +106,8 @@
 
 /* main */
 /* into */
-#intro .row{
-  height: 200px;
+#intro .row .col{
+  min-height: 200px;
 }
 /* /intro */
 
@@ -132,3 +132,32 @@
 }
 /* /benefits */
 /* /main */
+
+
+@media screen and (max-width: 576px){
+  .container{
+    width: 90%;
+    max-width: 576px;
+  }
+
+  #intro .row .col,
+  #planning .row .col,
+  #testimonials .row .col,
+  #benefits .row .col,
+  #about .row .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    width: 100%;
+  }
+
+  #intro .row .col .card{
+    display: block;
+  }
+
+  #intro .row .col .card span{
+    display: block;
+    width: 100%;
+  }
+}
