@@ -163,7 +163,8 @@
 }
 
 
-@media screen and (max-width: 992px){
+@media screen and (min-width: 576),
+screen and (max-width: 992px){
   .container{
     width: 90%;
     max-width: 992px;
@@ -176,12 +177,26 @@
     /* text-align: center; */
     width: 100%;
   }
+}
 
+
+@media screen and (min-width: 576px){
   #benefits .row .col{
     display: flex;
     justify-content: center;
     align-items: center;
     /* text-align: center; */
     width: 50%;
+  }
+}
+
+
+@media screen and (min-width: 992px){
+  #benefits .row .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    width: calc(100% / 3);
   }
 }
