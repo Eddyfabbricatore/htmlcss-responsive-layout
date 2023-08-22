@@ -67,6 +67,13 @@ img{
   background-color: #9792e4;
 }
 
+.btn-white{
+  border-radius: 20px;
+  padding: 15px 80px;
+  color: #9792e4;
+  background-color: white;
+}
+
 .w-50{
   width: 50%;
 }
@@ -93,6 +100,10 @@ img{
 
 .m-50{
   margin: 50px 0;
+}
+
+.m-70{
+  margin: 70px 0;
 }
 
 .mt-30{
@@ -123,12 +134,20 @@ img{
   margin-bottom: 70px;
 }
 
+.mb-80{
+  margin-bottom: 80px;
+}
+
 .br-10{
   border-radius: 10px;
 }
 
 .p-10{
   padding: 10px;
+}
+
+.p-30{
+  padding: 30px;
 }
 
 .p-40{
@@ -225,21 +244,127 @@ header .logo{
 
 
 /* benefits */
-#benefits .row .col{
-  height: 300px;
+#benefits{
+  padding-top: 80px;
+  background-color: #9792e4;
+}
+
+#benefits h2{
+  color: white;
+  font-size: 2.3rem;
+}
+
+#benefits .row .col .card{
+  border-radius: 20px;
+  padding: 15px;
+  background-color: white;
+}
+
+#benefits .row .col .card .card-top span{
+  font-size: 3rem;
+  color: #9792e4;
+}
+
+#benefits .row .col .card p:first-of-type{
+  font-size: 1.3rem;
+  color: #9792e4;
+}
+
+#benefits .row .col .card .btn-violet{
+  border-radius: 20px;
+  padding: 10px 60px;
+  color: white;
 }
 /* /benefits */
+
+
+/* about */
+#about .row .col h2{
+  color: #9792e4;
+}
+
+#about .row .col .card .card-top{
+  width: 150px;
+}
+
+#about .row .col .card .card-top img{
+  border-radius: 50%;
+}
+
+#about .row .col .card p{
+  font-size: 2.3rem;
+  color: #9792e4;
+}
+
+#about .row .col .card .btn-violet{
+  margin: 0;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: white;
+}
+
+#about .row .col .card .btn-violet i{
+  margin-right: 10px;
+}
+/* /about */
+
+
+/* cta */
+#cta{
+  padding: 50px 0;
+  color: white;
+  background-color: #9792e4;
+}
+
+#cta h2{
+  font-size: 2.3rem;
+}
+
+#cta h2:last-of-type{
+  color: orange;
+}
+
+#cta i{
+  margin: 0 10px;
+  font-size: .6rem;
+}
+/* /cta */
 /* /main */
+
+
+/* footer */
+footer{
+  padding: 50px 0;
+  background-color: #333333;
+}
+/* /footer */
 
 
 /* media */
 @media screen and (min-width: 576px) {
   #intro .row .col{
     width: calc(100% / 3);
+    flex-direction: row;
   }
 
   #intro .row .col:first-child{
     width: calc(100% - 100% / 3);
+  }
+
+  #intro .row .col .card{
+    font-size: .9rem;
+  }
+
+  #intro .row .col .card h2{
+    font-size: 1rem;
+  }
+
+  #intro .row .col .card .btn{
+    font-size: .9rem;
+  }
+
+  #intro .row .col .card .card-top i{
+    font-size: 4rem;
   }
 
   #testimonials .row .col:first-child{
@@ -260,6 +385,14 @@ header .logo{
 
   #about .row .col{
     width: calc(100% / 3);
+  }
+
+  #about .row .col .card p{
+    font-size: 1rem;
+  }
+
+  #about .row .col .card .btn-violet{
+    font-size: .7rem;
   }
 }
 
