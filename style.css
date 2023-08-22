@@ -15,6 +15,11 @@
   background-color: rgba(255, 0, 0, .2);
 }
 
+img{
+  width: 100%;
+  height: 100%;
+}
+
 .d-flex{
   display: flex;
 }
@@ -82,6 +87,17 @@
 .background-white{
   background-color: #fff;
 }
+
+.background-blue{
+  background-color: #0084fc;
+}
+
+
+/* header */
+header .logo{
+  width: 50px;
+}
+/* /header */
 
 
 /* main */
