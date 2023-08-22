@@ -5,7 +5,7 @@
 }
 
 .container{
-  width: 80%;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -35,28 +35,8 @@
   align-items: center;
 }
 
-.w-30{
-  width: 30%;
-}
-
-.w-33{
-  width: calc(100% / 3);
-}
-
-.w-40{
-  width: 40%;
-}
-
 .w-50{
   width: 50%;
-}
-
-.w-60{
-  width: 60%;
-}
-
-.w-70{
-  width: 70%;
 }
 
 .w-100{
@@ -134,69 +114,48 @@
 /* /main */
 
 
-@media screen and (max-width: 576px){
-  .container{
-    width: 90%;
-    max-width: 576px;
+/* media */
+@media screen and (min-width: 576px) {
+  #intro .row .col{
+    width: calc(100% / 3);
   }
 
-  #intro .row .col,
-  #planning .row .col,
-  #testimonials .row .col,
-  #benefits .row .col,
-  #about .row .col{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* text-align: center; */
-    width: 100%;
+  #intro .row .col:first-child{
+    width: calc(100% - 100% / 3);
   }
 
-  #intro .row .col .card{
-    display: block;
+  #testimonials .row .col:first-child{
+    width: 30%;
   }
 
-  #intro .row .col .card span{
-    display: block;
-    width: 100%;
-  }
-}
-
-
-@media screen and (min-width: 576),
-screen and (max-width: 992px){
-  .container{
-    width: 90%;
-    max-width: 992px;
+  #testimonials .row .col{
+    width: 70%;
   }
 
-  #planning .row .col{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* text-align: center; */
-    width: 100%;
-  }
-}
-
-
-@media screen and (min-width: 576px){
   #benefits .row .col{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* text-align: center; */
     width: 50%;
   }
-}
 
+  #about .row .col:first-child{
+    width: calc(100% - 100% / 3);
+  }
 
-@media screen and (min-width: 992px){
-  #benefits .row .col{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* text-align: center; */
+  #about .row .col{
     width: calc(100% / 3);
   }
 }
+
+@media screen and (min-width:  992px){
+  .container{
+    width: 80%;
+  }
+
+  #planning .row .col{
+    width: 50%;
+  }
+
+  #benefits .row .col{
+    width: calc(100% / 3);
+  }
+}
+/* /media */
