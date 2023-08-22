@@ -28,6 +28,10 @@ img{
   flex-wrap: wrap;
 }
 
+.column-direction{
+  flex-direction: column;
+}
+
 .justify-between{
   justify-content: space-between;
 }
@@ -40,12 +44,39 @@ img{
   align-items: center;
 }
 
+.text-center{
+  text-align: center;
+}
+
+.btn{
+  border: none;
+  border-radius: 20px;
+  padding: 10px 60px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: white;
+  background-color: #0084fc;
+}
+
+.btn-violet{
+  margin: 40px 0;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: .9rem;
+  color: black;
+  background-color: #9792e4;
+}
+
 .w-50{
   width: 50%;
 }
 
 .w-100{
   width: 100%;
+}
+
+.h-50{
+  height: 50%;
 }
 
 .m-20{
@@ -68,6 +99,14 @@ img{
   margin-top: 30px;
 }
 
+.mr-10{
+  margin-right: 10px;
+}
+
+.mt-50{
+  margin-top: 50px;
+}
+
 .mb-40{
   margin-bottom: 40px;
 }
@@ -82,6 +121,10 @@ img{
 
 .p-10{
   padding: 10px;
+}
+
+.p-40{
+  padding: 40px;
 }
 
 .background-white{
@@ -102,10 +145,41 @@ header .logo{
 
 /* main */
 /* into */
-#intro .row .col{
-  min-height: 200px;
+#intro .row .col h2{
+  color: #0084fc;
+}
+
+#intro .row .col .card{
+  padding: 40px;
+  text-align: center;
+  font-size: 1.3rem;
+  background-color: #b5dcfe;
+}
+
+#intro .row .col .card .card-top i{
+  width: 100%;
+  height: 100%;
+  font-size: 6rem;
 }
 /* /intro */
+
+
+/* planning */
+#planning{
+  background-color: #9792e4;
+}
+
+#planning .row .col .card{
+  border-radius: 20px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+#planning .row .col:last-child .card{
+  color: black;
+  background-color: white;
+}
+/* /planning */
 
 
 /* testimonials */
