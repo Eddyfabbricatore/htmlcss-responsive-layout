@@ -107,12 +107,20 @@ img{
   margin-top: 50px;
 }
 
+.mt-80{
+  margin-top: 80px;
+}
+
 .mb-40{
   margin-bottom: 40px;
 }
 
 .mb-50{
   margin-bottom: 50px;
+}
+
+.mb-70{
+  margin-bottom: 70px;
 }
 
 .br-10{
@@ -183,15 +191,35 @@ header .logo{
 
 
 /* testimonials */
+#testimonials h2{
+  font-size: 2rem;
+  color: #9792e4
+}
+
+#testimonials p{
+  font-size: 1.3rem;
+}
+
+#testimonials .row{
+  color: white;
+  background-color: #9792e4;
+}
+
 #testimonials .row .col{
   padding: 15px;
 }
 
-#testimonials .testimonials-img{
-  width: 100px;
-  height: 100px;
+#testimonials .row .col .card{
+  border-radius: 20px;
+}
+
+#testimonials .row .col .card .card-top{
+  width: 200px;
+  height: 200px;
+}
+
+#testimonials .row .col .card .card-top img{
   border-radius: 50%;
-  background-color: #000;
 }
 /* /testimonials */
 
